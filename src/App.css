@@ -1,33 +1,73 @@
 .App {
-  text-align: center;
+  /* text-align: center; */
+  background: #ffbb22;
+  width:100%;
+  height: 100vh;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
+blockquote{
+  font-size: 30px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+blockquote::before{
+  content:open-quote;
+  font-size: 40px;
+}
+blockquote::after{
+  content:close-quote;
+}
+#author{
+  float: right;
+  text-align: end;
+  font-size: 20px;
+}
+#quote-box{
+  position: absolute;
+  box-sizing: border-box;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  background:#fff;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: center;
+  box-shadow: -6px 0 0px #fff;
 }
 
-.App-link {
-  color: #61dafb;
+#quote-box button{
+border-radius: 5px;
+
+margin-top:20px;
+border:2px solid #fff;
+box-sizing: border-box;
+color:#000;
+padding:10px;
+background:#fff;
+display: flex;
+justify-content: center;
+align-items: center;
+
+}
+#quote-box .social{
+  float:left;
+  font-size: 30px;
+  /* color:rgb(231, 76, 60); */
+  ;
+  /* margin:5px; */
+  margin-right:10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#quote-box  #new-quote{
+  float:right;
+
+}
+
+footer{
+  text-align:center;
+  color:teal;
+}
+a{
+  color:none;
+  outline: none;
 }
